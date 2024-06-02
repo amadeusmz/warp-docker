@@ -35,7 +35,7 @@ USER warp
 RUN mkdir -p /home/warp/.local/share/warp && \
     echo -n 'yes' > /home/warp/.local/share/warp/accepted-tos.txt
 
-ENV GOST_ARGS="-L :1080 -F=127.0.0.1:40000"
+ENV GOST_ARGS="-L :1080 -F=127.0.0.1:40001"
 ENV WARP_SLEEP=2
 
 HEALTHCHECK --interval=15s --timeout=5s --start-period=30s --retries=3 \
